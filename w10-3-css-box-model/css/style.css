@@ -1,0 +1,39 @@
+body {
+    background-color: lightcoral;
+    font-family: Verdana, sans-serif;
+}
+
+body,
+h3,
+p {
+    margin: 0;
+}
+
+.box {
+    background-color: lightgreen;
+    width: 150px;
+    height: 100px;
+    margin: 20px;
+    padding: 10px;
+    border: 4px solid black;
+    border-style: dotted;
+}
+
+#special-box {
+    background-color: lightseagreen;
+    /* visibility: hidden; */
+    /* display: none; */
+    position: absolute;
+    /* position: fixed; */
+    right: 100px;
+    top: 50px;
+}
+
+.text-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.text-dsc {
+    font-size: 15px;
+}

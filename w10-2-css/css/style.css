@@ -1,0 +1,18 @@
+body {
+    background-color: pink;
+}
+
+h1 {
+    text-decoration: underline;
+    font-style: italic;
+}
+
+.resources {
+    background: aqua;
+    color: blueviolet;
+}
+
+.ourteam {
+    background: aqua;
+    color: blueviolet;
+}
