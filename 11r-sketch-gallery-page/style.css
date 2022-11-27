@@ -14,6 +14,7 @@ canvas {
 }
 
 .title {
+  color: darkblue;
   width: 450px;
   height: 68px;
   position: absolute;
@@ -22,6 +23,7 @@ canvas {
 }
 
 .instructions {
+  color: darkblue;
   background-color: lightskyblue;
   width: 330px;
   height: 125px;
