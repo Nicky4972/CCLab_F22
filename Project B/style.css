@@ -1,8 +1,110 @@
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
+  background-color: rgb(73, 95, 111);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 canvas {
   display: block;
+  position: absolute;
+  left: 18.25%;
+  top: 80px;
+}
+
+.title2 {
+  width: 300px;
+  height: 55px;
+  position: absolute;
+  top: 0;
+  left: 435px;
+}
+
+.instructions {
+  width: 227px;
+  height: 40px;
+  position: absolute;
+  top: 685px;
+  left: 476px;
+}
+
+.button {
+  width: 183px;
+  height: 40px;
+  position: absolute;
+  top: 745px;
+  left: 534px;
+}
+
+.title {
+  width: 205px;
+  height: 55px;
+  position: absolute;
+  top: 0;
+  left: 490px;
+}
+
+.info {
+  width: 690px;
+  height: 180px;
+  position: absolute;
+  top: 70px;
+  left: -15px;
+}
+
+.pic1 {
+  width: 450px;
+  height: 550px;
+  position: relative;
+  top: 290px;
+  left: 90px;
+}
+
+.pic1 div {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: black;
+  color: white;
+  margin-bottom: 5px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  opacity: 0;
+  visibility: hidden;
+  transition: visibility 0s, opacity 0.5s linear;
+}
+
+.pic1:hover {
+  cursor: pointer;
+}
+
+.pic1 div {
+  width: 150px;
+  padding: 8px 15px;
+  visibility: visible;
+  opacity: 0.7;
+}
+
+.pic2 {
+  width: 180.71px;
+  height: 241.25px;
+  position: absolute;
+  top: 30px;
+  left: 810px;
+}
+
+.pic3 {
+  width: 420px;
+  height: 570px;
+  position: absolute;
+  top: 310px;
+  left: 640px;
+}
+
+.link2 {
+  font-size: larger;
+}
+
+.link1 {
+  font-size: larger;
 }

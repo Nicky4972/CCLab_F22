@@ -6,28 +6,33 @@ let startx = 0;
 let starty = 0;
 
 let buttons = [];
-let snd1, snd2;
+let snd1, snd2, snd3, snd4;
 
 function preload() {
   img = loadImage("Maja.jpg");
   snd1 = loadSound("meow1.mp3");
   snd2 = loadSound("meow2.mp3");
+  snd3 = loadSound("meow3.mp3");
+  snd4 = loadSound("angrymeow.mp3");
 }
 
 let treats = [];
 let totalNum = 140;
 
 function setup() {
-  let canvas = createCanvas(windowWidth, 600);
+  let canvas = createCanvas(740, 600);
   canvas.parent("canvasContainer");
 
   img.loadPixels();
-  img.resize(windowWidth, 0);
+  img.resize(740, 0);
   img.updatePixels();
 
-  buttons.push(new Button(285, 40, 75, snd2));
-  buttons.push(new Button(645, 130, 75, snd2));
-  buttons.push(new Button(383, 385, 35, snd1));
+  buttons.push(new Button(265, 40, 75, snd2));
+  buttons.push(new Button(600, 130, 75, snd2));
+  buttons.push(new Button(355, 360, 35, snd1));
+  buttons.push(new Button(310, 435, 40, snd3));
+  buttons.push(new Button(430, 170, 65, snd3));
+  buttons.push(new Button(190, 560, 95, snd4));
 }
 
 function draw() {
@@ -108,21 +113,22 @@ class Treat {
     this.x = random(-200, 1500);
     this.y = y - 230;
     this.xSpd = 0;
-    this.ySpd = random(0.6, 1.8);
+    this.ySpd = random(0.4, 1.8);
   }
 
   move() {
     this.x += this.xSpd;
-    this.y += this.ySpd * 3;
+    this.y += this.ySpd * 3.5;
   }
 
   show() {
     push();
     translate(this.x, this.y);
-    strokeWeight(2);
+    strokeWeight(1);
     stroke(0);
     fill(115, 77, 38);
-    circle(0, 0, 50);
+    ellipse(0, 0, 80, 40);
+    triangle(25, 0, 45, -20, 45, 20);
     pop();
   }
 }
